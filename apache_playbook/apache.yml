@@ -1,1 +1,5 @@
 ---
+- hosts: apache
+  serial: "50%"
+  roles:
+   - /ansible/deploy_httpd_app/
