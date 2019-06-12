@@ -29,7 +29,7 @@ This playbook can pass 3 optional variables:
 "rpm_version" variable is added to support installation of specific httpd version. If variable is not passed, then latest available httpd version will be installed. If we want to install specific httpd version we should pass for example:
 rpm_version=-2.4.6-88.el7.centos.x86_64
 
-"server_percent" is added to support rolling updates so if we want to execute playbook on for example 20% of all servers we can pass 20:
+"server_percent" is added to support rolling updates so if we want to execute playbook on for example 20% of all servers we can pass 20:                    
 --extra-vars "server_percent=20"
 If we want to process all servers in parallel we can pass 100 or just skip this variable (default is 100% of servers).                             
 
