@@ -1,4 +1,7 @@
 ---
+# this playbook will not do all hosts in parallel, so rolling updates are supported. 
+# here we run playbook in batches of 20% of servers
+# this playbook uses deploy_httpd_app ansible role
 - hosts: apache
   serial: "20%"
   roles:
