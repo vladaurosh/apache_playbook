@@ -18,7 +18,7 @@ Example Playbook
 ----------------
 
 Including an example of how to use this playbook:
- # ansible-playbook apache.yml -i hosts --extra-vars "rpm_version=-2.4.6-88.el7.centos.x86_64" --extra-vars "roolback=yes"
+ \# ansible-playbook apache.yml -i hosts --extra-vars "rpm_version=-2.4.6-88.el7.centos.x86_64" --extra-vars "roolback=yes"
 
 License
 -------
