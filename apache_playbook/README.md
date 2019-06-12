@@ -36,8 +36,10 @@ If we want to process all servers in parallel we can pass 100 or just skip this 
 Example Playbook
 ----------------
 
-Including an example of how to use this playbook:                       
+Including an examples of how to use this playbook:       
+ \# ansible-playbook apache.yml -i hosts
  \# ansible-playbook apache.yml -i hosts --extra-vars "rpm_version=-2.4.6-88.el7.centos.x86_64" --extra-vars "roolback=yes"
+  \# ansible-playbook apache.yml -i hosts --extra-vars "rpm_version=-2.4.6-88.el7.centos.x86_64" --extra-vars "roolback=yes" --extra-vars "server_percent=50"
 
 License
 -------
