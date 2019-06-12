@@ -1,8 +1,7 @@
 ---
-# this playbook will not execute on all hosts in parallel, so rolling updates are supported. 
-# here we run playbook in batches of 20% of servers
+# this playbook supports rolling updates, so it can be executed in batches of some server number percent. Also, playbook can run on all hosts in parallel (100%). 
 # this playbook uses deploy_httpd_app ansible role
 - hosts: webservers
-  serial: "20%"
+  serial: "{{ server_percent | default('100') }}%"
   roles:
    - /ansible/deploy_httpd_app/
