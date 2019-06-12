@@ -1,4 +1,4 @@
-Playbook Name
+Deploy HTTPD Ansible Playbook
 =========
 
 This ansible playbook will install httpd (apache) web server on multiple server using using ansible role available here:
